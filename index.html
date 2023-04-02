@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">">
+    <script src="https://kit.fontawesome.com/54866b8805.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Worlds' Biggest University</h1>
+            <p>Web development is very easy for this you have to learn html ,css, javascript <br>javascript are good to go</p>
+            <a class="hero-botton" href="">Click here to visit us</a>
+        </div>
+
+    </section>
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia illo dolorem optio ipsam natus non.</p>
+        <div class="row">
+            <div class="course-colum">
+                <h3>Intermediat</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptates a fugiat facere, ratione vitae quis numquam quaerat, hic culpa quos amet suscipit qui voluptatum ullam ea dolorum cum natus?</p>
+            </div>
+            <div class="course-colum">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptates a fugiat facere, ratione vitae quis numquam quaerat, hic culpa quos amet suscipit qui voluptatum ullam ea dolorum cum natus? </p>
+            </div >
+            <div class="course-colum">
+                <h3>Post Graduate</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptates a fugiat facere, ratione vitae quis numquam quaerat, hic culpa quos amet suscipit qui voluptatum ullam ea dolorum cum natus?</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png" alt="london">
+              <div class="layer">
+                    <h3>LONDON</h3>
+              </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="london">
+              <div class="layer">
+                    <h3>NEW YORK</h3>
+              </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="london">
+              <div class="layer">
+                    <h3>WASHINGTON</h3>
+              </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navlinks =document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right= "-200px"
+        
+        }
+
+        
+    </script>
+</body>
+</html>
